@@ -1,0 +1,55 @@
+{
+  "name": "online-mode-server",
+  "version": "1.0.0",
+  "description": "Exemplo de Servidor Modo Online",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "electron-builder build"
+  },
+  "author": "Johnatan Duarte",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "autoprefixer": "^10.4.16",
+    "electron": "^26.2.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "buffer": "^6.0.3",
+    "crypto": "^1.0.1",
+    "electron-updater": "^6.1.4",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "toastify-js": "^1.12.0"
+  },
+  "repository": "https://github.com/johwconst/IntelbrasModoOnlineElectron",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.IntelbrasModoOnlineElectron.electron.exchange.stream",
+    "productName": "Bio-T API Shield",
+    "win": {
+      "publisherName": "johwconst",
+      "verifyUpdateCodeSignature": false,
+      "requestedExecutionLevel": "requireAdministrator",
+      "icon": "icone.ico",
+      "publish": [
+        "github"
+      ],
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+
+
+a {
+  text-decoration: none;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -(250);
+}
+
+.margin {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: baseline
+}
+
+
+.column-auto {
+  flex: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #00184d;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #00184d;
+}
+
+.result_img {
+  font-size: 44px;
+}
+
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.work_page {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  /* Borda arredondada */
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #00184d;
+  /* Cor da borda mais escura */
+  border-radius: 5px;
+  color: #00184d;
+  /* Cor do texto */
+}
+
+.input_device {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #00184d;
+  border-radius: 5px;
+  color: #00184d;
+}
+
+
+.send_button {
+  background-color: #00184d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.terminal_style {
+  font-family: monospace;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #dddddd;
+  width: 1200px;
+  height: 300px;
+}
+
+.terminal_eventmanager_style {
+  font-family: monospace;
+  font-size: 18px;
+  overflow-y: auto;
+  background-color: #cacaca;
+  width: 1200px;
+  height: 600px;
+  top: 12px;
+  position: relative;
+}
+
+.button {
+  background-color: #07369b;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+}
+
+.buttons-modo-online {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 630px;
+  top: -27px;
+  align-items: flex-end;
+}
+
+
+.https-modo-online {
+  position: relative;
+  right: -1026px;
+  top: -88px;
+}
+
+.liberar-acesso-modo-online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -13px;
+  right: 171px;
+}
+
+
+.input_device {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(25, 81, 145);
+}
+

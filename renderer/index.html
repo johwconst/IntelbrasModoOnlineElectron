@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+        
+        <!-- ===== CSS ===== -->
+        <link href='css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Exemplo Servidor Modo Online</title>
+    </head>
+    <body id="body-pd" class="body-pd"> 
+            <h2>Exemplo - Servidor Modo Online - Intelbras</h2>
+            <div class="row">
+                <div class="column-auto">
+                    <div class="margin">
+                        <div>
+                            <span class="font">Path para eventos</span>  
+                            <div> 
+                                <input id="online_path_server" class="input_device" type="text" value="/notification" placeholder="Path Servidor"/> 
+                            </div>
+                            <span class="font">Path para keepalive</span>
+                            <div> 
+                                <input id="online_path_keepalive" class="input_device" type="text" value="/keepalive" placeholder="Path KeepAlive"/> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-auto">
+                    <div class="margin">
+                        <div class="decisao-modo-online"></div>
+                            <span>Menssagem e Decisão do Servidor</span>  
+                            <div> 
+                                <input id="online_message" class="input_device" type="text" value="VERIFIQUE A MENSALIDADE" placeholder="Mensagem"/> 
+                            </div>
+                            <div> 
+                                <span >Liberar acesso?</span>
+                                <label class="switch">
+                                    <input id="online_toggle_return" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            <div>
+                <div> 
+                    <button id="online_start_button" class="button" type="submit">Iniciar Servidor <i class='bx bx-play nav__icon' ></i></button>
+                
+             
+                        <button id="online_stop_button" class="button" type="submit">Parar Servidor <i class='bx bx-stop nav__icon' ></i></button>
+                </div>
+                
+            </div>
+            <div id="online_body" class="terminal_eventmanager_style">
+                <span id="online_body">
+            </span></div>
+        </div>
+    </div>
+
+    <script src="js/renderer.js" defer></script>
+    </body>
+</html>
+
