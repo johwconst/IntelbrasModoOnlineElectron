@@ -38,7 +38,7 @@
   },
   "build": {
     "appId": "com.IntelbrasModoOnlineElectron.electron.exchange.stream",
-    "productName": "Bio-T API Shield",
+    "productName": "IntelbrasModoOnlineElectron",
     "win": {
       "publisherName": "johwconst",
       "verifyUpdateCodeSignature": false,
